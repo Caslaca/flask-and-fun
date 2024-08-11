@@ -31,14 +31,12 @@ on:
     branches: [ "main" ]
 
 env:
-  AWS_REGION: eu-west-1                   # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: 715841325439.dkr.ecr.eu-west-1.amazonaws.com/my-flask-app           # set this to your Amazon ECR repository name
-  ECS_SERVICE: flask-and-fun                 # set this to your Amazon ECS service name
-  ECS_CLUSTER: dev-ecs-cluster                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: flask-and-fun # set this to the path to your Amazon ECS task definition
-                                               # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: flask-and-fun           # set this to the name of the container in the
-                                               # containerDefinitions section of your task definition
+  AWS_REGION: eu-west-1               # set this to your preferred AWS region, e.g. us-west-1
+  ECR_REPOSITORY: camlas/my-flask-app # set this to your Amazon ECR repository name
+  ECS_SERVICE: flask-and-fun          # set this to your Amazon ECS service name
+  ECS_CLUSTER: dev-ecs-cluster        # set this to your Amazon ECS cluster name
+  ECS_TASK_DEFINITION: flask-and-fun  # set this to the path to your Amazon ECS task definition file, e.g. .aws/task-definition.json
+  CONTAINER_NAME: flask-and-fun       # set this to the name of the container in the containerDefinitions section of your task definition
 
 permissions:
   contents: read
