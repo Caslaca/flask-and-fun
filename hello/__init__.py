@@ -27,6 +27,6 @@ def create_app():
         Returns:
             str: A greeting message.
         """
-        return "Hello, World"
+        return "Hello, World v2"
 
     return app
