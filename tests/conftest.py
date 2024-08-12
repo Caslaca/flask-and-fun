@@ -13,8 +13,8 @@ def app():
     Yields:
         Flask: The Flask application instance.
     """
-    app_instance = create_app()
-    yield app_instance
+    app = create_app()
+    yield app
 
 @pytest.fixture
 def client(app):

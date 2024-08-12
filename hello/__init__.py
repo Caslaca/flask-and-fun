@@ -1,9 +1,9 @@
-import os
-from flask import Flask
-
 """
 This module contains the factory function for creating a Flask application instance.
 """
+
+import os
+from flask import Flask
 
 def create_app():
     """
