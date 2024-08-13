@@ -1,3 +1,7 @@
+"""
+This module sets up the package using setuptools.
+"""
+
 from setuptools import find_packages, setup
 
 setup(

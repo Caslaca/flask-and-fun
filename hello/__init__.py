@@ -1,8 +1,17 @@
+"""
+This module contains the factory function for creating a Flask application instance.
+"""
+
 import os
 from flask import Flask
 
-
 def create_app():
+    """
+    Create and configure the Flask application.
+
+    Returns:
+        app (Flask): The Flask application instance.
+    """
     app = Flask(__name__)
 
     try:
@@ -12,6 +21,12 @@ def create_app():
 
     @app.route("/")
     def hello():
-        return "Hello, World v4"
+        """
+        A simple route that returns a greeting.
+
+        Returns:
+            str: A greeting message.
+        """
+        return "Hello, World v2"
 
     return app
