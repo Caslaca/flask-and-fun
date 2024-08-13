@@ -13,4 +13,4 @@ def test_main_page(client):
         The response data is 'Hello, World'.
     """
     response = client.get('/')
-    assert response.data == b'Hello, World'
+    assert response.data == b'Hello, World v3'
